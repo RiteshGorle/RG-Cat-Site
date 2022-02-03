@@ -1,0 +1,687 @@
+/* WebSite Name: Bunty Gorle Blog's
+   Made by: Ritesh Gorle
+   Created: Feb 2022
+   Content: Cat website
+*/
+
+/*****************************************
+Table Of Contents:
+
+01. BASIC CSS Style
+02. Navigation & Carousel
+03. My Self
+04. Register Form DATA
+05. Meet
+06. Important Points
+07. Meet Me
+08. Traits
+09. Contact Me
+10. Footer
+11. Media Queries
+******************************************/
+
+
+/******************************/
+/*    01. BASIC CSS Style     */
+/******************************/
+body,
+html {
+    width: 100%;
+  height: 100%;
+}
+
+/* All Buttons Start */
+.btn-solid-reg {
+  display: inline-block;
+  padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
+  border: 0.125rem solid ;
+  border-radius: 2rem;
+  background-color: #ffa07a;
+  color: black;
+  
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-solid-reg:hover {
+  border: 0.125rem solid #333;
+  background-color: transparent;
+  color: #333;
+  text-decoration: none;
+}
+/* All Buttons End */
+
+
+/* All Forms Start*/
+.form-group {
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+
+.form-group.has-error.has-danger {
+  margin-bottom: 0.625rem;
+}
+
+.form-group.has-error.has-danger .help-block.with-errors ul {
+  margin-top: 0.375rem;
+}
+
+.label-control {
+  position: absolute;
+  top: 0.87rem;
+  left: 1.375rem;
+  color: #555;
+  opacity: 1;
+  cursor: text;
+  transition: all 0.2s ease;
+}
+
+.form-control-input:focus + .label-control,
+.form-control-input.notEmpty + .label-control,
+.form-control-textarea:focus + .label-control,
+.form-control-textarea.notEmpty + .label-control {
+  top: 0.125rem;
+  opacity: 1;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.form-control-input,
+.form-control-select {
+  display: block; /* needed for proper display of the label in Firefox, IE, Edge */
+  width: 100%;
+  padding-top: 1.0625rem;
+  padding-bottom: 0.0625rem;
+  padding-left: 1.3125rem;
+  border: 1px solid #c4d8dc;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  color: #555;
+  transition: all 0.2s;
+  -webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
+}
+
+.form-control-select {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  height: 3rem;
+}
+/* All Forms End*/
+
+
+/******************************/
+/*  02. Navigation & Carousel */
+/******************************/
+
+/* Navigation bar */
+.navbar{
+  background-color:#990000;
+}
+.navbar-toggler{
+  background-color:#39ac39;
+  border: 2px solid ;
+}
+
+.navco{
+  color: #7bea7b;
+}
+
+/* Make the Carousel  image fully responsive */
+.carousel-caption{
+
+  
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.carousel-inner img {
+    width: 100%;
+}
+
+
+  /**************************/
+ /*      03. My Self       */
+/**************************/
+.Cat-1 {
+  padding-top: 3.75rem;
+  padding-bottom: 3.5rem;
+  background-color: #90ee90;
+}
+
+.Cat-1 h2 {
+  margin-bottom: 1.25rem;
+}
+
+.Cat-1 img {
+  margin-bottom: 2.5rem;
+  border-radius: 0.75rem;
+}
+
+
+/****************************/
+/*  04. Register Form DATA  */
+/****************************/
+.Fill {
+  padding-top: 6rem;
+  padding-bottom: 6.25rem;
+  background-color:#ffa07a;
+}
+
+.Fill h2 {
+  margin-bottom: 1.25rem;
+}
+
+.Fill p,
+.Fill .list-unstyled,
+.Fill .help-block,
+.Fill .checkbox,
+.Fill .checkbox a {
+  color: #333;
+}
+
+.Fill p {
+  margin-bottom: 1.5rem;
+}
+
+.Fill .list-unstyled .fas {
+  color: #333;
+  font-size: 0.5rem;
+  line-height: 1.5rem;
+}
+
+.Fill .list-unstyled .media-body {
+  margin-left: 0.625rem;
+}
+
+.Fill .form-control-input {
+  border: 1px solid #ffedd0;
+  background-color: #ffedd0;
+}
+
+.Fill .form-control-input:hover {
+  border: 1px solid #fff;
+}
+
+.Fill .form-control-submit-button {
+  border: 0.125rem solid #333;
+  background-color: transparent;
+}
+
+.Fill .form-control-submit-button:hover {
+  border: 0.125rem solid #ffedd0;
+  background-color: #ffedd0;
+}
+
+
+/************************/
+/*       05. Meet       */
+/************************/
+.Meet {
+  padding-top: 2.75rem;
+  padding-bottom: 4rem;
+  background-color: #90ee90;
+}
+
+.Meet .text-container {
+  margin-bottom: 3.5rem;
+}
+
+.Meet h2 {
+  margin-bottom: 1.25rem;
+}
+
+.Meet p {
+  margin-bottom: 1.375rem;
+}
+
+.Meet img {
+  border-radius: 0.25rem;
+}
+
+/*************************/
+/*  06. Important Points */
+/*************************/
+.Issues {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  background-color: #ffa07a;
+}
+
+.Issues h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.Issues p {
+  text-align: center;
+}
+
+.Issues .card {
+  max-width: 21rem;
+  margin-right: auto;
+  margin-bottom: 4rem;
+  margin-left: auto;
+  padding: 3rem 1.625rem 1.75rem 1.625rem;
+  border: none;
+  background-color: #fff;
+  text-align: center;
+}
+
+.Issues .card-image {
+  width: 6rem;
+  height: 6rem;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+  border-radius: 50%;
+  background-color: #fbf9f5;
+}
+
+.Issues .fas {
+  color: #90ee90;
+  font-size: 3rem;
+  line-height: 6rem;
+}
+
+.Issues .card-body {
+  padding: 0;
+}
+
+.Issues .card-title {
+  margin-bottom: 0.5rem;
+}
+
+
+/****************************/
+/*     07. Meet Me          */
+/***************************/
+.Bunty {
+  margin: 2.5rem auto;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  border-radius: 0.25rem;
+  background: #90ee90;
+  text-align: left;
+}
+
+.Bunty .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.Bunty .image-container {
+  max-width: 62.5rem;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  margin-left: auto;
+}
+
+.Bunty .image-container img {
+  border-radius: 1rem;
+}
+
+.Bunty h3 {
+  margin-bottom: 0.5rem;
+}
+
+.Bunty hr {
+  width: 15rem;
+  height: 0.125rem;
+  margin-top: 0;
+  margin-bottom: 0.875rem;
+  margin-left: 0;
+  border: 0;
+  background-color: #555;
+  text-align: left;
+}
+
+
+.Bunty .list-unstyled .fas {
+  color: #555;
+  font-size: 0.5rem;
+  line-height: 1.5rem;
+}
+
+.Bunty .list-unstyled .media-body {
+  margin-left: 0.625rem;
+}
+
+.Bunty .btn-outline-reg,
+.Bunty .btn-solid-reg {
+  margin-top: 0.75rem;
+}
+
+.Bunty .btn-solid-reg.mfp-close {
+  position: relative;
+  width: auto;
+  height: auto;
+  color: #333;
+  opacity: 1;
+}
+
+.Bunty .btn-solid-reg.mfp-close:hover {
+  color: #333;
+}
+
+
+/***************************/
+/*      08. Traits         */
+/***************************/
+.feature {
+  padding-top: 3.5rem;
+  padding-bottom: 2.75rem;
+  background-color: #ffa07a;
+}
+
+.feature h2 {
+  margin-bottom: 3.75rem;
+  text-align: center;
+}
+
+.feature .li-space-lg li {
+  margin-bottom: 1.375rem;
+}
+
+.feature .list-unstyled .bullet {
+  margin-right: 0.625rem;
+  width: 2.125rem;
+  height: 2.125rem;
+  border-radius: 50%;
+  background-color: #90ee90;
+  color: #333;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+
+/***********************/
+/*   09. Contact Me    */
+/***********************/
+.ME {
+  padding-top: 6.125rem;
+  padding-bottom: 5.125rem;
+  background-color: #90ee90;
+}
+
+.ME .text-container {
+  margin-bottom: 3rem;
+}
+
+.ME h2 {
+  margin-bottom: 1.125rem;
+}
+
+.ME p {
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.ME h3 {
+  margin-bottom: 0.875rem;
+}
+
+.form-3 .list-unstyled,
+.form-3 .list-unstyled a {
+  color: #333;
+}
+
+.ME .list-unstyled .fas {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+.ME .list-unstyled .media-body {
+  margin-left: 0.75rem;
+}
+
+.ME .list-unstyled .media-body .fas.fa-globe {
+  margin-left: 1.125rem;
+  margin-right: 0.75rem;
+}
+
+.ME .form-control-input,
+.ME .form-control-textarea {
+  border: 1px solid #ffedd0;
+  background-color: #ffedd0;
+}
+
+.ME .form-control-input:hover,
+.ME .form-control-textarea:hover {
+  border: 1px solid #fff;
+}
+
+.ME .help-block,
+.ME .checkbox,
+.ME .checkbox a {
+  color: #333;
+}
+
+.ME .form-control-submit-button {
+  border: 0.125rem solid #333;
+  background-color: transparent;
+}
+
+.ME .form-control-submit-button:hover {
+  border: 0.125rem solid #ffedd0;
+  background-color: #ffedd0;
+}
+
+/*****************************/
+/*      10. Footer           */
+/*****************************/ 
+/*Footer */
+.py-4{
+  background-color:#990000 ;
+}
+
+
+/*****************************/
+/*     11. Media Queries     */
+/*****************************/ 
+/* Min-width width 768px */
+@media (min-width: 768px) {
+  
+  /* BASIC CSS Style */
+  .p-heading {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  /* END of BASIC CSS Style */
+
+
+  /* Register Form DATA */
+  .Fill {
+    padding-top: 9rem;
+  }
+  /*END of Register Form DATA */
+
+
+  /* Traits */
+  .feature h2 {
+    width: 41rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .feature .list-unstyled .bullet {
+    width: 3.25rem;
+    height: 3.25rem;
+    margin-right: 1rem;
+    font-size: 1.375rem;
+    line-height: 3.25rem;
+  }
+  /* END of Traits */
+
+}
+/* end of min-width width 768px */
+
+
+
+/* Min-width width 992px */
+@media (min-width: 992px) {
+  
+  /* BASIC CSS Style */
+  .p-heading {
+    width: 65%;
+  }
+  /* END of BASIC CSS Style */
+
+
+  /* Register Form DATA */
+  .Fill {
+    padding-top: 10rem;
+  }
+  /* END of Register Form DATA */
+
+
+  /* My Self */
+  .Cat-1 {
+    padding-bottom: 4.5rem;
+  }
+
+  .Cat-1 img {
+    margin-bottom: 0;
+  }
+  /* END of My Self */
+
+
+  /* Traits */
+  .feature {
+    padding-top: 4.5rem;
+    padding-bottom: 3.5rem
+  }
+  /* END of Traits */
+
+
+  /* Meet */
+  .Meet {
+    padding-top: 3.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .Meet .text-container {
+    margin-bottom: 0;
+  }
+  /* END of Meet */
+
+
+  /* Meet Me */
+  .Bunty {
+    max-width: 62.5rem;
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+  }
+
+  .Bunty .image-container {
+    max-width: 100%;
+    margin-right: 2rem;
+    margin-bottom: 0;
+    margin-left: 0.5rem;
+  }
+  
+  .Bunty h3 {
+    margin-top: 0.5rem;
+  }
+  /* END of Meet Me */
+
+
+  /* Important Points */
+  .Issues {
+    padding-top: 3.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .Issues .card {
+    display: inline-block;
+    width: 17.75rem;
+    max-width: 100%;
+    vertical-align: top;
+  }
+
+  .Issues .card:nth-child(3n+2) {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  /* END of Important Points */
+
+
+  /* Contact Me */
+  .ME .text-container {
+    margin-bottom: 0;
+  }
+  /* END of Contact Me */
+
+}
+/* end of min-width width 992px */
+
+
+/* Min-width width 1200px */
+@media (min-width: 1200px) {
+  
+  /* Register Form DATA */
+  .Fill {
+    padding-top: 12rem;
+  }
+
+  .Fill .text-container {
+    margin-top: 1rem;
+    margin-right: 3.5rem;
+  }
+
+  .Fill form {
+    margin-left: 1.5rem;
+  }
+  /* END of Register Form DATA  */
+
+
+  /* My Self */
+  .Cat-1 .text-container {
+    margin-top: 3.125rem;
+    margin-left: 3.5rem;
+  }
+  /* END of My Self */
+
+
+  /* Traits */
+  .feature .list-unstyled.first {
+    margin-right: 1.625rem;
+  }
+
+  .feature .list-unstyled.second {
+    margin-left: 1.625rem;
+  }
+  /* END of Traits */
+
+
+  /* Meet */
+  .Meet .text-container {
+    margin-top: 2.5rem;
+    margin-right: 3.5rem;
+  }
+  /* END of Meet */
+
+
+  /* Important Points */
+  .Issues .card {
+    width: 21rem;
+  }
+
+  .Issues .card:nth-child(3n+2) {
+    margin-right: 2.875rem;
+    margin-left: 2.875rem;
+  }
+  /* END of Important Points */
+
+
+  /* Contact Me */
+  .ME .text-container {
+    margin-top: 2.25rem;
+    margin-right: 3.5rem;
+  }
+  /* END of Contact Me */
+  
+}
+/* end of min-width width 1200px */
