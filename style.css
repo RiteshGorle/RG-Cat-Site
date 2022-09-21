@@ -123,8 +123,26 @@ html {
 }
 
 .navco{
-  color: #7bea7b;
+  color: yellow;
 }
+
+.carousel-inner{
+  border: 4px solid red;
+}
+
+
+.carousel-control-prev-icon{
+  width: 30px;
+  height: 30px;
+}
+
+
+
+.carousel-control-next-icon{
+  width: 30px;
+  height: 30px;
+}
+
 
 /* Make the Carousel  image fully responsive */
 .carousel-caption{
@@ -136,6 +154,7 @@ html {
 
 .carousel-inner img {
     width: 100%;
+
 }
 
 
@@ -155,6 +174,7 @@ html {
 .Cat-1 img {
   margin-bottom: 2.5rem;
   border-radius: 0.75rem;
+  height: 700px;
 }
 
 
@@ -162,7 +182,7 @@ html {
 /*  04. Register Form DATA  */
 /****************************/
 .Fill {
-  padding-top: 6rem;
+  padding-top: 2rem;
   padding-bottom: 6.25rem;
   background-color:#ffa07a;
 }
@@ -236,11 +256,25 @@ html {
 
 .Meet img {
   border-radius: 0.25rem;
+  height: 500px;
+  border-radius: 30px;
+  border: 4px solid red;
 }
 
 /*************************/
 /*  06. Important Points */
 /*************************/
+@media screen and (min-width: 0px) and (max-width: 430px) {
+
+  #why-content { display: block; } /* show it on big screens */
+}
+
+@media screen and (min-width: 431px) and (max-width: 4000px) {
+   
+   #why-content { display: none; }/* hide it elsewhere */
+}
+
+
 .Issues {
   padding-top: 3rem;
   padding-bottom: 2rem;
@@ -296,7 +330,6 @@ html {
 /*     07. Meet Me          */
 /***************************/
 .Bunty {
-  margin: 2.5rem auto;
   padding: 2rem 1.5rem 2rem 1.5rem;
   border-radius: 0.25rem;
   background: #90ee90;
@@ -317,6 +350,7 @@ html {
 
 .Bunty .image-container img {
   border-radius: 1rem;
+  height: 600px;
 }
 
 .Bunty h3 {
@@ -400,8 +434,8 @@ html {
 /*   09. Contact Me    */
 /***********************/
 .ME {
-  padding-top: 6.125rem;
-  padding-bottom: 5.125rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   background-color: #90ee90;
 }
 
@@ -477,6 +511,14 @@ html {
   background-color:#990000 ;
 }
 
+#id99{
+  text-decoration: none;
+}
+
+#id99:hover {
+  background-color: yellow;
+}
+
 
 /*****************************/
 /*     11. Media Queries     */
@@ -495,7 +537,7 @@ html {
 
   /* Register Form DATA */
   .Fill {
-    padding-top: 9rem;
+    padding-top: 4rem;
   }
   /*END of Register Form DATA */
 
@@ -533,7 +575,7 @@ html {
 
   /* Register Form DATA */
   .Fill {
-    padding-top: 10rem;
+    padding-top: 4rem;
   }
   /* END of Register Form DATA */
 
@@ -591,12 +633,11 @@ html {
   /* Important Points */
   .Issues {
     padding-top: 3.5rem;
-    padding-bottom: 3rem;
   }
 
   .Issues .card {
     display: inline-block;
-    width: 17.75rem;
+    width: 10rem;
     max-width: 100%;
     vertical-align: top;
   }
@@ -623,7 +664,7 @@ html {
   
   /* Register Form DATA */
   .Fill {
-    padding-top: 12rem;
+    padding-top: 4rem;
   }
 
   .Fill .text-container {
@@ -666,7 +707,7 @@ html {
 
   /* Important Points */
   .Issues .card {
-    width: 21rem;
+    width: 14rem;
   }
 
   .Issues .card:nth-child(3n+2) {
